@@ -8,8 +8,8 @@ function getDatabase() {
     
         /* PHP script runs local or remote. Database server remote */
        $config = array(
-            'DB_DNS' => 'mysql:host=ict.neit.edu;port=5500;dbname=se266_zachary',
-            'DB_USER' => 'se266_zachary',
+            'DB_DNS' => 'mysql:host=ict.neit.edu;port=5500;dbname=se266_zachary2',
+            'DB_USER' => 'se266_zachary2',
             'DB_PASSWORD' => '8000878'
         );
        
