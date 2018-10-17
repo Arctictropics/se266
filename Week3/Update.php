@@ -48,8 +48,8 @@
                 if ( !isset($id) ) {
                     die('Record not found');
                 }
-                $dataone = $results['dataone'];
-                $datatwo = $results['datatwo'];
+                $id = $results['id'];
+                $corp = $results['corp'];
             }
         
         ?>
@@ -57,9 +57,19 @@
         <h1><?php echo $result; ?></h1>
         
         <form method="post" action="#">            
-            Data one <input type="text" value="<?php echo $dataone; ?>" name="dataone" />
+            ID <input type="text" value="<?php echo $id; ?>" name="id" />
             <br />
-            Data two <input type="text" value="<?php echo $datatwo; ?>" name="datatwo" />
+            Corporation <input type="text" value="<?php echo $corp; ?>" name="corp" />
+            <br />
+            Owner <input type="text" value="<?php echo $owner; ?>" name="owner" />
+            <br />
+            Phone number <input type="text" value="<?php echo $phone; ?>" name="phone" />
+            <br />
+            Email <input type="text" value="<?php echo $email; ?>" name="email" />
+            <br />
+            Postal Code <input type="text" value="<?php echo $zipcode; ?>" name="zipcode" />
+            <br />
+            Date of Foundation <input type="text" value="<?php echo $incorp_dt; ?>" name="incorp_dt" />
             <br />  
             <input type="hidden" value="<?php echo $id; ?>" name="id" /> 
             <input type="submit" value="Update" />
